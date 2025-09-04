@@ -4,4 +4,4 @@
 
 ## 1.0.0+2
 
-- Fixed Pub Points.
+- Fixed issues on Pub points.
