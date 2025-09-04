@@ -5,3 +5,12 @@
 # Avoid committing pubspec.lock for library packages; see
 # https://dart.dev/guides/libraries/private-files#pubspeclock.
 pubspec.lock
+
+build/native_assets/macos/native_assets.json
+build/test_cache/build/cache.dill.track.dill
+build/unit_test_assets/AssetManifest.bin
+build/unit_test_assets/AssetManifest.json
+build/unit_test_assets/FontManifest.json
+build/unit_test_assets/NOTICES.Z
+build/unit_test_assets/NativeAssetsManifest.json
+build/unit_test_assets/shaders/ink_sparkle.frag
