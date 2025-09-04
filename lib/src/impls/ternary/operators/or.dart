@@ -11,7 +11,7 @@ import '../../../abstractions/scalar_envelope.dart';
 /// final hasAdminRole = ScalarOf(() => userRole == 'admin');
 /// final hasModeratorRole = ScalarOf(() => userRole == 'moderator');
 /// final canModerate = Or(hasAdminRole, hasModeratorRole);
-/// 
+///
 /// if (canModerate.value()) {
 ///   // Allow moderation if user is either an admin OR a moderator
 /// }
@@ -42,6 +42,8 @@ final class Or extends ScalarEnvelope<bool> {
       );
 }
 
+/// Extension methods for [Scalar<bool>] to add the [or] operator.
 extension OrScalar on Scalar<bool> {
+  /// Creates a new [Or] from this [Scalar<bool>] and another [Scalar<bool>].
   Scalar<bool> or(Scalar<bool> other) => Or(this, other);
 }

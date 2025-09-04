@@ -10,7 +10,7 @@ import '../../../abstractions/scalar_envelope.dart';
 /// final age = ScalarOf(() => 25);
 /// final requiredAge = ScalarOf(() => 18);
 /// final isOldEnough = Equals(age, requiredAge);
-/// 
+///
 /// if (isOldEnough.value()) {
 ///   // Handle case when age equals required age
 /// }

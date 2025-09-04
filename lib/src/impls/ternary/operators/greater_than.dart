@@ -10,7 +10,7 @@ import '../../../abstractions/scalar_envelope.dart';
 /// final age = ScalarOf(() => 25);
 /// final minimumAge = ScalarOf(() => 18);
 /// final isAdult = GreaterThan(age, minimumAge);
-/// 
+///
 /// if (isAdult.value()) {
 ///   // Handle case when age is greater than minimum age
 /// }

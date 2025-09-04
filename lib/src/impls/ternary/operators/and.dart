@@ -11,7 +11,7 @@ import '../../../abstractions/scalar_envelope.dart';
 /// final isAdult = ScalarOf(() => age >= 18);
 /// final hasPermission = ScalarOf(() => userHasPermission);
 /// final canAccess = And(isAdult, hasPermission);
-/// 
+///
 /// if (canAccess.value()) {
 ///   // Allow access only if user is an adult AND has permission
 /// }
@@ -42,6 +42,8 @@ final class And extends ScalarEnvelope<bool> {
       );
 }
 
+/// Extension methods for [Scalar<bool>] to add the [and] operator.
 extension AndScalar on Scalar<bool> {
+  /// Creates a new [And] from this [Scalar<bool>] and another [Scalar<bool>].
   Scalar<bool> and(Scalar<bool> other) => And(this, other);
 }

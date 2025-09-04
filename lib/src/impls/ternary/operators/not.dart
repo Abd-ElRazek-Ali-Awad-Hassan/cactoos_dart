@@ -10,7 +10,7 @@ import '../../../abstractions/scalar_envelope.dart';
 /// ```dart
 /// final isAdult = ScalarOf(() => age >= 18);
 /// final isMinor = Not(isAdult);
-/// 
+///
 /// if (isMinor.value()) {
 ///   // Handle case for minors
 /// }
