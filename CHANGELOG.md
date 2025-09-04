@@ -9,3 +9,7 @@
 ## 1.1.0+0
 
 - Added example/main.dart.
+
+## 1.1.0+1
+
+- Updated README.md.
