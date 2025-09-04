@@ -6,6 +6,6 @@
 
 - Fixed issues on Pub points.
 
-## 1.0.0+3
+## 1.1.0+0
 
 - Added example/main.dart.
