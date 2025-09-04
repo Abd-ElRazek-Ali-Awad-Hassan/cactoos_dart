@@ -17,6 +17,10 @@ Add the following to your Dart file:
 import 'package:cactoos_dart/cactoos_dart.dart';
 ```
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Documentation
 
 Cactoos Dart is a collection of object-oriented primitives for Dart, inspired by the [Cactoos](https://github.com/yegor256/cactoos) library for Java. It provides a set of abstractions and implementations that follow object-oriented design principles.
