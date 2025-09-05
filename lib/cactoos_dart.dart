@@ -6,11 +6,13 @@ export 'src/interfaces/text.dart';
 export 'src/abstractions/text_envelope.dart';
 export 'src/abstractions/future_envelope.dart';
 export 'src/abstractions/scalar_envelope.dart';
+export 'src/abstractions/iterable_envelope.dart';
 
 export 'src/impls/scalar_of/scalar_of.dart';
 
 export 'src/impls/collections/first_of.dart';
 export 'src/impls/collections/last_of.dart';
+export 'src/impls/collections/mapped.dart';
 
 export 'src/impls/ternary/operators/or.dart';
 export 'src/impls/ternary/operators/and.dart';

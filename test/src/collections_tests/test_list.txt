@@ -10,3 +10,11 @@
 (Done) LastOf [Scalar<Element>]
 - (Done) return default when list is empty.
 - (Done) return last element.
+
+Mapped [Iterable<Target>]
+- (Done) is empty when src are empty.
+- mapped elements.
+
+Filtered [Iterable<Target>]
+- is empty when elements are empty.
+- filtered elements.
