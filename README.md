@@ -8,7 +8,7 @@
 Add the following to your `pubspec.yaml` file:
 ```yaml
 dependencies:
-  cactoos_dart: ^1.0.0
+  cactoos_dart: ^2.0.2+0
 ```
 
 ### Import
