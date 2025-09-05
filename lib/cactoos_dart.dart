@@ -1,7 +1,6 @@
 library;
 
 export 'src/interfaces/scalar.dart';
-export 'src/interfaces/text.dart';
 
 export 'src/abstractions/text_envelope.dart';
 export 'src/abstractions/future_envelope.dart';

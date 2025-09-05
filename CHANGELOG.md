@@ -28,3 +28,8 @@
 ## 2.0.1+0
 
 - Made [FirstOf].[defaultValue], and [LastOf].[defaultValue] of type: [Scalar].
+
+## 2.0.2+0
+
+- Added [Length].
+- Removed [Text] interface.
