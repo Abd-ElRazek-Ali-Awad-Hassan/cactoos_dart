@@ -17,3 +17,10 @@
 ## 1.1.0+2
 
 - Updated pubspec.yaml.
+
+## 2.0.0+0
+
+- Added Filtered iterable.
+- Added Mapped iterable.
+- Added FirstOf iterable.
+- Added LastOf iterable.
