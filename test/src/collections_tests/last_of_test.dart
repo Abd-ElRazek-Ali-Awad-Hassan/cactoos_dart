@@ -4,11 +4,11 @@ import 'package:test/test.dart';
 void main() {
   group('LastOf', () {
     test('returns default when list is empty.', () {
-      expect(LastOf([], defaultValue: 0).value(), 0);
+      expect(LastOf([], defaultValue: Number.zero()).value(), 0);
     });
 
     test('returns last element', () {
-      expect(LastOf([1, 2, 3], defaultValue: 0).value(), 3);
+      expect(LastOf([1, 2, 3], defaultValue: Number.zero()).value(), 3);
     });
   });
 }

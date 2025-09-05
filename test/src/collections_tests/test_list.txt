@@ -6,10 +6,12 @@
 (Done) FirstOf [Scalar<Element>]
 - (Done) return default when list is empty.
 - (Done) return first element.
+- (Done) default value is scalar.
 
 (Done) LastOf [Scalar<Element>]
 - (Done) return default when list is empty.
 - (Done) return last element.
+- (Done) default value is scalar.
 
 Mapped [Iterable<Target>]
 - (Done) is empty when src are empty.
