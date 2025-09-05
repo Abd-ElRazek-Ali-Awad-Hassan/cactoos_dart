@@ -1,0 +1,12 @@
+- Mapped.
+- Filtered.
+- FirstOf.
+- LastOf.
+
+(Done) FirstOf [Scalar<Element>]
+- (Done) return default when list is empty.
+- (Done) return first element.
+
+LastOf [Scalar<Element>]
+- return default when list is empty.
+- return last element.

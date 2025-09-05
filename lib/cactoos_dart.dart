@@ -9,6 +9,8 @@ export 'src/abstractions/scalar_envelope.dart';
 
 export 'src/impls/scalar_of/scalar_of.dart';
 
+export 'src/impls/collections/first_of.dart';
+
 export 'src/impls/ternary/operators/or.dart';
 export 'src/impls/ternary/operators/and.dart';
 export 'src/impls/ternary/operators/not.dart';
