@@ -13,6 +13,7 @@ export 'src/impls/scalar_of/scalar_of.dart';
 export 'src/impls/collections/first_of.dart';
 export 'src/impls/collections/last_of.dart';
 export 'src/impls/collections/mapped.dart';
+export 'src/impls/collections/filtered.dart';
 
 export 'src/impls/ternary/operators/or.dart';
 export 'src/impls/ternary/operators/and.dart';

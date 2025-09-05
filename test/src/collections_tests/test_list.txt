@@ -1,4 +1,4 @@
-- Mapped.
+- (Done) Mapped.
 - Filtered.
 - (Done) FirstOf.
 - (Done) LastOf.
@@ -13,7 +13,7 @@
 
 Mapped [Iterable<Target>]
 - (Done) is empty when src are empty.
-- mapped elements.
+- (Done) map elements.
 
 Filtered [Iterable<Target>]
 - is empty when elements are empty.
