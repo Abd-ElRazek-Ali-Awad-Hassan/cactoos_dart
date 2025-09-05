@@ -1,0 +1,4 @@
+(Done) Length 
+- (Done) of Map.
+- (Done) of String.
+- (Done) of Iterable.
