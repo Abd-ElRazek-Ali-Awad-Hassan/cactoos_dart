@@ -3,7 +3,7 @@ import 'package:test/test.dart';
 
 void main() {
   group('UnmodifiableLazyMap', () {
-    test('get value given key', () {
+    test('getting value for a given key', () {
       final map = UnmodifiableLazyMap(
         [1, 2, 3],
         key: (e) => e,
@@ -12,7 +12,7 @@ void main() {
       expect(map[1], '1');
     });
 
-    test('get keys', () {
+    test('getting keys', () {
       final map = UnmodifiableLazyMap(
         [1, 2, 3],
         key: (e) => e,
