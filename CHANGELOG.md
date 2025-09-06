@@ -33,3 +33,8 @@
 
 - Added [Length].
 - Removed [Text] interface.
+
+## 2.1.0+0
+
+- Added [LazyMap].
+- Added [UnmodifiableLazyMap]
