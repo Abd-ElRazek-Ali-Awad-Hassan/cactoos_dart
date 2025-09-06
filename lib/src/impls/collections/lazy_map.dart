@@ -1,6 +1,27 @@
 import 'dart:collection';
 
+/// A map that is lazy-initialized.
+///
+/// The map is initialized when an element is accessed or modified.
+///
+/// Example:
+/// ```dart
+/// final map = LazyMap(
+///   [1, 2, 3],
+///   key: (e) => e,
+///   value: (e) => '$e',
+/// );
+/// ```
+///
+/// See also:
+///   - [UnmodifiableLazyMap]
 final class LazyMap<K, V, E> extends MapBase<K, V> {
+  /// Creates a new [LazyMap] that wraps the given [elements].
+  ///
+  /// The [key] function is used to convert each element of [elements] to a key.
+  /// The [value] function is used to convert each element of [elements] to a value.
+  ///
+  /// The [elements] are not evaluated until an element is accessed or modified.
   LazyMap(
     Iterable<E> elements, {
     required K Function(E e) key,
