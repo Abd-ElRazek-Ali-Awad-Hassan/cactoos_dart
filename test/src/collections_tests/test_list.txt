@@ -2,6 +2,7 @@
 - (Done) Filtered.
 - (Done) FirstOf.
 - (Done) LastOf.
+- (Done) UnmodifiableLazyMap.
 
 (Done) FirstOf [Scalar<Element>]
 - (Done) return default when list is empty.
@@ -20,3 +21,8 @@ Mapped [Iterable<Target>]
 (Done) Filtered [Iterable<Target>]
 - (Done) is empty when elements are empty.
 - (Done) filtered elements.
+
+(Done) UnmodifiableLazyMap.from(Iterable, key: (e) => ..., value: (e) => ...)
+- (Done) get value by key.
+- (Done) ensure key is not called before getting values.
+- (Done) ensure value is not called before getting values.
