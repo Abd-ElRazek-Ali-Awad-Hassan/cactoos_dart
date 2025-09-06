@@ -42,6 +42,7 @@ export 'src/impls/number/number.dart';
 export 'src/impls/io/text_of_file.dart';
 export 'src/impls/io/json_of_file.dart';
 export 'src/impls/io/bytes_of_file.dart';
+export 'src/impls/io/lines_of_file.dart';
 
 export 'src/impls/text/plain_text.dart';
 export 'src/impls/text/trimmed_text.dart';
