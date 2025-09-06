@@ -35,5 +35,15 @@ void main() {
 
       expect(count, 0);
     });
+
+    test('throws error on modifying an element', () {
+      final map = UnmodifiableLazyMap(
+        [1, 2, 3],
+        key: (e) => e,
+        value: (e) => '$e',
+      );
+
+      expect(() => map[1] = '1', throwsA(isA<UnsupportedError>()));
+    });
   });
 }
