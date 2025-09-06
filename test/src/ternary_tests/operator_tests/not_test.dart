@@ -8,7 +8,7 @@ void main() {
     });
 
     test('of boolean scalar', () {
-      expect(ScalarOf.fromValue(false).negate().value(), true);
+      expect(ScalarOf.value(false).negate().value(), true);
     });
   });
 }

@@ -8,7 +8,7 @@ import '../../abstractions/scalar_envelope.dart';
 /// Example:
 /// ```dart
 /// // From a direct value
-/// final scalar1 = ScalarOf.fromValue(42);
+/// final scalar1 = ScalarOf.value(42);
 /// print(scalar1.value()); // Prints: 42
 ///
 /// // From a function
@@ -19,7 +19,7 @@ final class ScalarOf<Value> extends ScalarEnvelope<Value> {
   /// Creates a new [ScalarOf] from a direct value.
   ///
   /// The [value] parameter is the value to be wrapped.
-  ScalarOf.fromValue(Value value) : this(() => value);
+  ScalarOf.value(Value value) : this(() => value);
 
   /// Creates a new [ScalarOf] from a function that returns a value.
   ///

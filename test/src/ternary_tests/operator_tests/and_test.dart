@@ -8,10 +8,7 @@ void main() {
     });
 
     test('boolean scalars', () {
-      expect(
-        ScalarOf.fromValue(true).and(ScalarOf.fromValue(true)).value(),
-        true,
-      );
+      expect(ScalarOf.value(true).and(ScalarOf.value(true)).value(), true);
     });
   });
 }

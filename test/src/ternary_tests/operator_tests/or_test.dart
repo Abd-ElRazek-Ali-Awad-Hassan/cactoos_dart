@@ -10,10 +10,8 @@ void main() {
 
     test(
       'boolean scalars',
-      () => expect(
-        ScalarOf.fromValue(true).or(ScalarOf.fromValue(false)).value(),
-        true,
-      ),
+      () =>
+          expect(ScalarOf.value(true).or(ScalarOf.value(false)).value(), true),
     );
   });
 }
