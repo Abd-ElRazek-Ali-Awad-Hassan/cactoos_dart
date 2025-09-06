@@ -2,6 +2,7 @@
 - (Done) Filtered.
 - (Done) FirstOf.
 - (Done) LastOf.
+- (Done) LazyMap.
 - (Done) UnmodifiableLazyMap.
 
 (Done) FirstOf [Scalar<Element>]
@@ -26,3 +27,9 @@ Mapped [Iterable<Target>]
 - (Done) get value by key.
 - (Done) ensure key is not called before getting values.
 - (Done) ensure value is not called before getting values.
+
+(Done) LazyMap.
+- (Done) get value for a given key.
+- (Done) change value for a given key.
+- (Done) ensure key is not called before first access.
+- (Done) ensure value is not called before first access.
