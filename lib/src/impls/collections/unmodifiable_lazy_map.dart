@@ -21,13 +21,15 @@ import 'dart:collection';
 final class UnmodifiableLazyMap<K, V, E> extends UnmodifiableMapBase<K, V> {
   /// Creates a new [UnmodifiableLazyMap] with the given [elements].
   ///
-  /// The [elements] parameter is the iterable of elements to be wrapped.
+  /// The [elements] parameter is the iterable of elements to be wrapped, it must be unmodifiable.
+  /// because you know changing elements can be possible before first access.
   ///
   /// The [key] parameter is the function that returns the key of an element.
   ///
   /// The [value] parameter is the function that returns the value of an element.
   factory UnmodifiableLazyMap(
-    /// The iterable of elements to be wrapped.
+    /// The iterable of elements to be wrapped, it must be unmodifiable.
+    /// because you know changing elements can be possible before first access.
     Iterable<E> elements, {
 
     /// The function that returns the key of an element.
