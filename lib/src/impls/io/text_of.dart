@@ -10,22 +10,15 @@ import '../../abstractions/future_envelope.dart';
 ///
 /// Example:
 /// ```dart
-/// final textFuture = TextOfFile.from('path/to/file.txt');
+/// final textFuture = TextOf(File('path/to/file.txt'));
 /// final text = await textFuture;
 /// print(text); // Prints the contents of the file
 /// ```
-final class TextOfFile extends FutureEnvelope<String> {
-  /// Creates a new [TextOfFile] from a file path.
-  ///
-  /// The [path] parameter is the path to the file to be read.
-  /// The [encoding] parameter is the encoding to use when reading the file (defaults to UTF-8).
-  TextOfFile.from(String path, {Encoding encoding = utf8})
-    : this(File(path), encoding: encoding);
-
-  /// Creates a new [TextOfFile] from a [File] object.
+final class TextOf extends FutureEnvelope<String> {
+  /// Creates a new [TextOf] from a [File] object.
   ///
   /// The [file] parameter is the file to be read.
   /// The [encoding] parameter is the encoding to use when reading the file (defaults to UTF-8).
-  TextOfFile(File file, {Encoding encoding = utf8})
+  TextOf(File file, {Encoding encoding = utf8})
     : super(future: () async => await file.readAsString(encoding: encoding));
 }

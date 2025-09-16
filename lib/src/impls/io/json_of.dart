@@ -1,0 +1,26 @@
+import 'dart:io';
+import 'dart:convert';
+import 'text_of.dart';
+import '../../abstractions/future_envelope.dart';
+
+/// A [Future] implementation that reads and parses a JSON file.
+///
+/// This class provides a way to asynchronously read a JSON file and parse its contents
+/// into a [Map<String, dynamic>] object.
+///
+/// Example:
+/// ```dart
+/// final jsonFuture = JsonOf(File('path/to/file.json'));
+/// final jsonMap = await jsonFuture;
+/// print(jsonMap['key']); // Prints the value associated with 'key'
+/// ```
+final class JsonOf extends FutureEnvelope<Map<String, dynamic>> {
+  /// Creates a new [JsonOf] from a [File] object.
+  ///
+  /// The [file] parameter is the JSON file to be read and parsed.
+  /// The [encoding] parameter is the encoding to use when reading the file (defaults to UTF-8).
+  JsonOf(File file, {Encoding encoding = utf8})
+    : super(
+        future: () async => jsonDecode(await TextOf(file, encoding: encoding)),
+      );
+}

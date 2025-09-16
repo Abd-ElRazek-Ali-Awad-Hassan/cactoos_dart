@@ -5,20 +5,18 @@ import 'package:file/memory.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('TextOfFile', () {
+  group('LinesOf', () {
     test('returns text of file', () async {
-      final expectedText = 'test text';
-
       final file = await MemoryFileSystem.test()
           .file('test.txt')
-          .writeAsString(expectedText);
+          .writeAsString('test\ntest2\n test3');
 
-      expect(await TextOfFile(file), expectedText);
+      expect(await LinesOf(file), ['test', 'test2', ' test3']);
     });
 
     test('throws PathNotFoundException on non existed file', () async {
       expect(
-        () async => await TextOfFile.from('test.txt'),
+        () async => await LinesOf(File('test.txt')),
         throwsA(isA<PathNotFoundException>()),
       );
     });

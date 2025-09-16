@@ -42,3 +42,9 @@
 ## 2.2.0+0
 
 - Added [LinesOfFile].
+
+## 2.3.0+0
+
+- Refactored IO Utils Objects.
+- Changed [ScalarOf.fromValue] to [ScalarOf.value].
+- Made ScalarEnevlope Ctor [const].

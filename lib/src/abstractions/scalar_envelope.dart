@@ -18,7 +18,7 @@ abstract class ScalarEnvelope<Value> extends Equatable
   /// Creates a new [ScalarEnvelope] with the given scalar function.
   ///
   /// The [scalar] function is called when [value()] is invoked.
-  ScalarEnvelope({required Value Function() scalar}) : _value = scalar;
+  const ScalarEnvelope({required Value Function() scalar}) : _value = scalar;
 
   /// The function that returns the value of this scalar.
   final Value Function() _value;

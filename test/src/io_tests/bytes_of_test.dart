@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:cactoos_dart/cactoos_dart.dart';
@@ -6,20 +5,20 @@ import 'package:file/memory.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('JsonOfFile', () {
-    test('returns json content of file', () async {
-      final content = {'id': 1, 'name': 'test', 'age': 20};
+  group('BytesOf', () {
+    test('returns bytes of file', () async {
+      final content = 'test text';
 
       final file = await MemoryFileSystem.test()
           .file('test.txt')
-          .writeAsString(jsonEncode(content));
+          .writeAsBytes(content.codeUnits);
 
-      expect(await JsonOfFile(file), content);
+      expect(String.fromCharCodes(await BytesOf(file)), content);
     });
 
     test('throws PathNotFoundException on non existed file', () async {
       expect(
-        () async => await JsonOfFile.from('test.txt'),
+        () async => await BytesOf(File('test.txt')),
         throwsA(isA<PathNotFoundException>()),
       );
     });
