@@ -48,3 +48,7 @@
 - Refactored IO Utils Objects.
 - Changed [ScalarOf.fromValue] to [ScalarOf.value].
 - Made ScalarEnevlope Ctor [const].
+
+## 2.4.0+0
+
+- Added [LazyList].

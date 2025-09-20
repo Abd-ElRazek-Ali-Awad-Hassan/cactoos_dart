@@ -16,6 +16,7 @@ export 'src/impls/collections/last_of.dart';
 export 'src/impls/collections/mapped.dart';
 export 'src/impls/collections/filtered.dart';
 export 'src/impls/collections/lazy_map.dart';
+export 'src/impls/collections/lazy_list.dart';
 export 'src/impls/collections/unmodifiable_lazy_map.dart';
 
 export 'src/impls/ternary/operators/or.dart';
