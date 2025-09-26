@@ -24,5 +24,5 @@ final class ScalarOf<Value> extends ScalarEnvelope<Value> {
   /// Creates a new [ScalarOf] from a function that returns a value.
   ///
   /// The [scalar] parameter is the function that returns the value.
-  ScalarOf(Value Function() scalar) : super(scalar: scalar);
+  const ScalarOf(Value Function() scalar) : super(scalar: scalar);
 }

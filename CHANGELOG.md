@@ -52,3 +52,7 @@
 ## 2.4.0+0
 
 - Added [LazyList].
+
+## 2.5.0+0
+
+- Added const to [ScalarOf] ctor.
