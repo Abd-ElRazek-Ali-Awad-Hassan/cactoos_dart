@@ -22,13 +22,18 @@ final class LazyMap<K, V, E> extends MapBase<K, V> {
   /// The [value] function is used to convert each element of [elements] to a value.
   ///
   /// The [elements] are not evaluated until an element is accessed or modified.
-  LazyMap(
+  LazyMap.fromIterable(
     Iterable<E> elements, {
     required K Function(E e) key,
     required V Function(E e) value,
-  }) : this._(() => {for (final e in elements) key(e): value(e)});
+  }) : this(src: () => {for (final e in elements) key(e): value(e)});
 
-  LazyMap._(this._src) : __map = <K, V>{}, _srcAttached = [false];
+  /// Creates a new [LazyMap] given a [src] function.
+  /// The [src] are not evaluated or called until an element is accessed or modified.
+  LazyMap({required Map<K, V> Function() src})
+    : _src = src,
+      __map = <K, V>{},
+      _srcAttached = [false];
 
   final Map<K, V> __map;
   final List<bool> _srcAttached;

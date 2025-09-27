@@ -4,13 +4,21 @@ import 'package:test/test.dart';
 void main() {
   group('LazyMap', () {
     test('getting value for a given key', () {
-      final map = LazyMap([1, 2, 3], key: (e) => '$e', value: (e) => e);
+      final map = LazyMap.fromIterable(
+        [1, 2, 3],
+        key: (e) => '$e',
+        value: (e) => e,
+      );
 
       expect(map['2'], 2);
     });
 
     test('changing value for a given key', () {
-      final map = LazyMap([1, 2, 3], key: (e) => '$e', value: (e) => e);
+      final map = LazyMap.fromIterable(
+        [1, 2, 3],
+        key: (e) => '$e',
+        value: (e) => e,
+      );
 
       map['2'] = 3;
 
@@ -18,7 +26,11 @@ void main() {
     });
 
     test('clearing map', () {
-      final map = LazyMap([1, 2, 3], key: (e) => '$e', value: (e) => e);
+      final map = LazyMap.fromIterable(
+        [1, 2, 3],
+        key: (e) => '$e',
+        value: (e) => e,
+      );
 
       map.clear();
 
@@ -26,13 +38,21 @@ void main() {
     });
 
     test('getting keys', () {
-      final map = LazyMap([1, 2, 3], key: (e) => '$e', value: (e) => e);
+      final map = LazyMap.fromIterable(
+        [1, 2, 3],
+        key: (e) => '$e',
+        value: (e) => e,
+      );
 
       expect(map.keys, ['1', '2', '3']);
     });
 
     test('removing value', () {
-      final map = LazyMap([1, 2, 3], key: (e) => '$e', value: (e) => e);
+      final map = LazyMap.fromIterable(
+        [1, 2, 3],
+        key: (e) => '$e',
+        value: (e) => e,
+      );
 
       expect(map.remove('1'), 1);
 
@@ -42,7 +62,7 @@ void main() {
     test('key is not called before first access', () {
       int count = 0;
 
-      LazyMap(
+      LazyMap.fromIterable(
         [1, 2, 3],
         key: (e) {
           count++;

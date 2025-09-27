@@ -56,3 +56,9 @@
 ## 2.5.0+0
 
 - Added const to [ScalarOf] ctor.
+
+## 2.6.0+0
+
+- Renamed [LazyMap] default ctor to [LazyMap.fromIterable].
+- Added default ctor for [LazyMap].
+
